@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VUE DEMO1</title>
+    </head>
+    <!-- 判断 -->
+
+    <div id="app">
+        <h1 v-if="ok">Yes</h1>
+        <h1 v-else>No</h1>
+    </div>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var vm = new Vue({
+                el: "#app",
+                data: {
+                    ok: true
+                }
+            });
+        </script>
+    </body>
+</html>

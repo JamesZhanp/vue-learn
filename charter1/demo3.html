@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VUE DEMO1</title>
+    </head>
+    <!-- 循环 -->
+
+    <div id="app">
+        <li v-for="item in items">
+            {{item.message}}
+        </li>
+    </div>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var vm = new Vue({
+                el: "#app",
+                data: {
+                    items:[
+                        {message:'Hello'},
+                        {message:'world'}
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>

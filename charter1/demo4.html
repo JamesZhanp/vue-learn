@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VUE DEMO1</title>
+    </head>
+
+    <div id="app">
+        <button v-on:click="sayHi">click me</button>
+    </div>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var vm = new Vue({
+                el: "#app",
+                data: {
+                    message: "Hello James"
+                },
+                // 事件methods
+                methods: {
+                    sayHi: function(event){
+                        alert(this.message);
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
